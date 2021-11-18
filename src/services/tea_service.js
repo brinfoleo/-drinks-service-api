@@ -1,7 +1,7 @@
 const getTea = (name = 'English') => {
     return {
         drinkType: 'Tea',
-        name: 'black tea',
+        name: 'Black tea',
     };
 };
 
