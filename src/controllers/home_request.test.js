@@ -8,5 +8,12 @@ describe('Test home API endpoint request', () => {
         expect(res.text).toEqual('Welcome to the Drinks API!');
         9
     });
-    10
+
+    test('GET should return the message I like coffee', async () => {
+        const res = await request(app).get('/coffeelover');
+        expect(res.statusCode).toEqual(200);
+        expect(res.text).toEqual('I like coffe!');
+        9
+    });
+
 });
